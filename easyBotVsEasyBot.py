@@ -1,3 +1,5 @@
+import time
+
 from game import Game
 from move import Move
 
@@ -13,6 +15,7 @@ class EasyBotVsEasyBot:
         print("Indexy pól:\n[1, 2, 3]\n[4, 5, 6]\n[7, 8, 9]\n")
         while True:
             print("\nRuch Bota 1:")
+            time.sleep(0.8)
             self.move.easyBotMove(self.board, self.bot1Symbol)
             self.board.printBoard()
             status = self.board.checkWin()
@@ -21,6 +24,7 @@ class EasyBotVsEasyBot:
                 break
 
             print("\nRuch Bota 2:")
+            time.sleep(0.8)
             self.move.easyBotMove(self.board, self.bot2Symbol)
             self.board.printBoard()
             status = self.board.checkWin()

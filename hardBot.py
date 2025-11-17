@@ -1,3 +1,4 @@
+import time
 from game import Game
 from move import Move
 
@@ -20,6 +21,7 @@ class HardBot:
                 break
 
             print("\nRuch bota:")
+            time.sleep(0.8)
             self.move.hardBotMove(self.board, self.botSymbol, self.playerSymbol)
             self.board.printBoard()
             status = self.board.checkWin()
