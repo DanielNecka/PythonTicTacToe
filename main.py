@@ -40,6 +40,4 @@ def menu():
         else:
             print("Podaj poprawną opcję 1–5!\n")
 
-if __name__ == "__main__":
-    menu()
-    input("\nNaciśnij Enter, aby zamknąć program...")
+menu()

@@ -1,4 +1,3 @@
-import time
 from game import Game
 from move import Move
 
@@ -21,7 +20,6 @@ class EasyBot:
                 break
 
             print("\nRuch bota:")
-            time.sleep(0.8)
             self.move.easyBotMove(self.board, self.botSymbol)
             self.board.printBoard()
             status = self.board.checkWin()
