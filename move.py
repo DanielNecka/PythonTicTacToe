@@ -38,6 +38,7 @@ class Move:
                 if board.checkPlace(row, col):
                     board.board[row][col] = opponent_symbol
                     if board.checkWin() == opponent_symbol:
+                        board.board[row][col] = symbol
                         return
                     board.board[row][col] = 0
 
@@ -45,12 +46,12 @@ class Move:
             board.board[1][1] = symbol
             return
 
-        for row, col in [(0,0), (0,2), (2,0), (2,2)]:
+        for row, col in [(0, 0), (0, 2), (2, 0), (2, 2)]:
             if board.checkPlace(row, col):
                 board.board[row][col] = symbol
                 return
 
-        for row, col in [(0,1), (1,0), (1,2), (2,1)]:
+        for row, col in [(0, 1), (1, 0), (1, 2), (2, 1)]:
             if board.checkPlace(row, col):
                 board.board[row][col] = symbol
                 return

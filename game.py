@@ -11,10 +11,16 @@ class Game:
     def makeMove(self, place, symbol):
         row = (place - 1) // 3
         col = (place - 1) % 3
-        if self.board[row][col] == 0:
+        if self.checkPlace(row, col):
             self.board[row][col] = symbol
             return True
         return False
+
+    def checkPlace(self, row, col):
+        if self.board[row][col] == 0:
+            return True
+        else:
+            return False
 
     def printBoard(self):
         for row in self.board:
