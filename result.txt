@@ -148,3 +148,21 @@ X | O | X
 O | X | X
 O | X | O
 Wynik: Remis
+
+2025-11-17 22:39:54
+X |   | O
+O | O |  
+X | X | X
+Wynik: X
+
+2025-11-17 22:40:10
+X | O | X
+X | O | O
+O | X | X
+Wynik: Remis
+
+2025-11-17 22:40:17
+X | X | O
+X | O |  
+O |   |  
+Wynik: O
